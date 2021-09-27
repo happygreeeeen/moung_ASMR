@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>멍 때리기 AMSR</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		div{width: 150px; height: 150x;}
+		img{display: block;width: 100%;}
+		header{width: 700px; margin: auto;}
+		section{width: 700px; margin: auto;}
+		h1{text-align: center; line-height: 80px; color: white; font-weight: 700;}
+		h4{text-align: center; line-height: 40px; color: white; font-weight: 400;}
+	</style>
+
+</head>
+<body bgcolor="black">
+
+	<header>
+		<h1>멍.... ASMR</h1>
+		<img src="img1.jpg">
+	</header>
+
+
+
+	<section>
+		<h4>Click the type you want to 멍..</h4>
+
+
+		<div style="float:left; margin-right:25px;"> 
+			<img id="fireBut" src="img2.jpg">
+			<audio id="fireSnd" src="fire.mp3"></audio>
+
+			<div class = "slidercontainer">
+				<input id="firevol" class="slider" type="range" max="100" min="0" value="100">
+			</div>
+
+				<style>
+
+				.slider {
+				  -webkit-appearance: none; 
+				  appearance: none;
+				  width: 100%; 
+				  height: 2px; 
+				  background: #3F4041; 
+				  outline: none; 
+				  opacity: 0.7; 
+				  -webkit-transition: .2s; 
+				  transition: opacity .2s;
+				}
+
+				.slider:hover {
+				  opacity: 1;
+				}
+
+				.slider::-webkit-slider-thumb {
+				  -webkit-appearance: none;
+				  appearance: none;
+				  width: 20px;
+				  height: 20px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+
+				.slider::-moz-range-thumb {
+				  width: 25px;
+				  height: 25px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+					
+				</style>
+			</div>
+
+			<script type="text/javascript">
+
+				var state = "off";
+
+				fireBut.onclick = function(){
+					if(state == "off"){
+						fireBut.src = "img2-1.jpg"
+						fireSnd.play();
+						state = "on";
+					} else if(state == "on"){
+						fireBut.src = "img2.jpg"
+						fireSnd.pause();
+						state = "off";
+					}
+				} 
+
+				firevol.oninput=function(){
+					fireSnd.volume=firevol.value / 100;
+					console.log(firevol.value)
+				}
+
+			</script>
+		</div>
+
+
+
+		<div style="float:left; margin-right:25px;">
+			<img id="rainBut" src="img3.jpg">
+			<audio id="rainSnd" src="rain.mp3"></audio>
+
+			<div class = "slidercontainer">
+				<input id="rainvol" class="slider" type="range" max="70" min="0" value="70">
+			</div>
+
+				<style>
+
+				.slider {
+				  -webkit-appearance: none; 
+				  appearance: none;
+				  width: 100%; 
+				  height: 2px; 
+				  background: #3F4041; 
+				  outline: none; 
+				  opacity: 0.7; 
+				  -webkit-transition: .2s; 
+				  transition: opacity .2s;
+				}
+
+				.slider:hover {
+				  opacity: 1;
+				}
+
+				.slider::-webkit-slider-thumb {
+				  -webkit-appearance: none;
+				  appearance: none;
+				  width: 20px;
+				  height: 20px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+
+				.slider::-moz-range-thumb {
+				  width: 25px;
+				  height: 25px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+					
+				</style>
+
+			<script type="text/javascript">
+
+				var state = "off";
+
+				rainBut.onclick = function(){
+					if(state == "off"){
+						rainBut.src = "img3-1.jpg"
+						rainSnd.play();
+						state = "on";
+					} else if(state == "on"){
+						rainBut.src = "img3.jpg"
+						rainSnd.pause();
+						state = "off";
+					}
+				} 
+
+				rainvol.oninput=function(){
+					rainSnd.volume=rainvol.value / 100;
+					console.log(rainvol.value)
+				}
+
+			</script>
+		</div>
+
+
+
+
+
+		<div style="float:left; margin-right:25px;">
+			<img id="nightBut" src="img4.jpg">
+			<audio id="nightSnd" src="night.mp3"></audio>
+
+			<div class = "slidercontainer">
+				<input id="nightvol" class="slider" type="range" max="100" min="0" value="100">
+			</div>
+
+				<style>
+
+				.slider {
+				  -webkit-appearance: none; 
+				  appearance: none;
+				  width: 100%; 
+				  height: 2px; 
+				  background: #3F4041; 
+				  outline: none; 
+				  opacity: 0.7; 
+				  -webkit-transition: .2s; 
+				  transition: opacity .2s;
+				}
+
+				.slider:hover {
+				  opacity: 1;
+				}
+
+				.slider::-webkit-slider-thumb {
+				  -webkit-appearance: none;
+				  appearance: none;
+				  width: 20px;
+				  height: 20px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+
+				.slider::-moz-range-thumb {
+				  width: 25px;
+				  height: 25px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+					
+				</style>
+
+
+
+			<script type="text/javascript">
+
+				var state = "off";
+
+				nightBut.onclick = function(){
+					if(state == "off"){
+						nightBut.src = "img4-1.jpg"
+						nightSnd.play();
+						state = "on";
+					} else if(state == "on"){
+						nightBut.src = "img4.jpg"
+						nightSnd.pause();
+						state = "off";
+					}
+				} 
+
+				nightvol.oninput=function(){
+					nightSnd.volume=nightvol.value / 100;
+					console.log(nightvol.value)
+				}
+
+			</script>
+		</div>
+
+
+
+
+		<div style="float:left; margin-right:25px;">
+			<img id="forestBut" src="img5.jpg">
+			<audio id="forestSnd" src="forest.mp3"></audio>
+
+			<div class = "slidercontainer">
+				<input id="forestvol" class="slider" type="range" max="100" min="0" value="100">
+			</div>
+
+				<style>
+
+				.slider {
+				  -webkit-appearance: none; 
+				  appearance: none;
+				  width: 100%; 
+				  height: 2px; 
+				  background: #3F4041; 
+				  outline: none; 
+				  opacity: 0.7; 
+				  -webkit-transition: .2s; 
+				  transition: opacity .2s;
+				}
+
+				.slider:hover {
+				  opacity: 1;
+				}
+
+				.slider::-webkit-slider-thumb {
+				  -webkit-appearance: none;
+				  appearance: none;
+				  width: 20px;
+				  height: 20px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+
+				.slider::-moz-range-thumb {
+				  width: 25px;
+				  height: 25px;
+				  border: 0;
+				  background: url('moung.png');
+				  background-repeat: no-repeat;
+				  background-size: cover;
+				  cursor: pointer;
+				}
+					
+				</style>
+
+
+			<script type="text/javascript">
+
+				var state = "off";
+
+				forestBut.onclick = function(){
+					if(state == "off"){
+						forestBut.src = "img5-1.jpg"
+						forestSnd.play();
+						state = "on";
+					} else if(state == "on"){
+						forestBut.src = "img5.jpg"
+						forestSnd.pause();
+						state = "off";
+					}
+				} 
+
+				forestvol.oninput=function(){
+					forestSnd.volume=forestvol.value / 100;
+					console.log(forestvol.value)
+				}
+
+
+			</script>
+		</div>
+	</script>
+	</section>
+
+
+</body>
+</html>
